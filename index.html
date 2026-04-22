@@ -6,7 +6,7 @@
 
 <meta property="og:title" content="윤창훈 ♥ 양소정 결혼합니다">
 <meta property="og:description" content="2026년 5월 1일 금요일 | 소박하지만 깊은 약속을 맺습니다.">
-<meta property="og:image" content="https://orca9152.github.io/wedding/KakaoTalk_20260422_160630821.jpg">
+<meta property="og:image" content="https://orca9152.github.io/wedding/KakaoTalk_20260422_162111033.jpg">
 <meta property="og:url" content="https://orca9152.github.io/wedding/">
 
 <title>윤창훈 ♥ 양소정 결혼합니다</title>
@@ -77,9 +77,9 @@ body{overflow-x:hidden;}
 /* ── GALLERY ── */
 .gallery-label{font-size:8px;letter-spacing:4px;color:var(--gold);text-align:center;margin-bottom:20px;}
 
-.gallery-track-wrap{overflow:hidden;position:relative;}
-.gallery-track{display:flex;gap:10px;transition:transform 0.45s cubic-bezier(.4,0,.2,1);will-change:transform;padding:0 28px;}
-.gallery-slide{flex:0 0 calc(100% - 56px);border-radius:3px;overflow:hidden;background:var(--cream);aspect-ratio:3/4;position:relative;}
+.gallery-track-wrap{overflow:hidden;position:relative;margin:0 28px;border-radius:3px;}
+.gallery-track{display:flex;gap:10px;transition:transform 0.45s cubic-bezier(.4,0,.2,1);will-change:transform;padding:0;}
+.gallery-slide{flex:0 0 100%;border-radius:3px;overflow:hidden;background:var(--cream);aspect-ratio:3/4;position:relative;}
 .gallery-slide img{width:100%;height:100%;object-fit:cover;display:block;}
 
 .gallery-dots{display:flex;justify-content:center;gap:6px;margin-top:18px;}
@@ -105,7 +105,7 @@ body{overflow-x:hidden;}
 .acc-arrow{color:var(--gold);transition:transform .35s ease}
 .acc-arrow.open{transform:rotate(180deg)}
 .acc-body{max-height:0;overflow:hidden;transition:max-height .4s ease;background:var(--white)}
-.acc-body.open{max-height:240px;border-top:1px solid var(--gold-line)}
+.acc-body.open{max-height:400px;border-top:1px solid var(--gold-line)}
 .acc-inner{padding:26px 20px;text-align:center}
 
 /* 계좌번호 클릭 복사 */
@@ -173,7 +173,7 @@ body{overflow-x:hidden;}
 <div class="wrap"><div class="card">
 
   <div class="hero" id="hero">
-    <div id="hero-img" style="position:absolute;inset:0;background:url('KakaoTalk_20260422_160630821.jpg') center/cover no-repeat;transition:background 0.5s;"></div>
+    <div id="hero-img" style="position:absolute;inset:0;background:url('KakaoTalk_20260422_162111033.jpg') center/cover no-repeat;transition:background 0.5s;"></div>
     <div class="hero-overlay"></div>
     <div class="hero-date">2026. 5. 1.</div>
   </div>
@@ -288,13 +288,24 @@ body{overflow-x:hidden;}
       </button>
       <div class="acc-body" id="body-groom">
         <div class="acc-inner">
-          <div style="font-size:18px;margin-bottom:4px;font-weight:300;">윤창훈</div>
-          <div style="font-size:9px;color:var(--gold);margin-bottom:4px;letter-spacing:2px;">KB 국민은행</div>
-          <button class="acc-number-row" onclick="copyNumber(this, '000-0000-0000-00')" aria-label="계좌번호 복사">
-            <span class="acc-number-text">000-0000-0000-00</span>
-            <svg class="acc-copy-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-            <span class="acc-copied-badge">COPIED ✔</span>
-          </button>
+          <div style="margin-bottom:24px;">
+            <div style="font-size:16px;margin-bottom:4px;font-weight:300;">윤은현</div>
+            <div style="font-size:9px;color:var(--gold);margin-bottom:4px;letter-spacing:2px;">신협</div>
+            <button class="acc-number-row" onclick="copyNumber(this, '1320789502269')" aria-label="계좌번호 복사">
+              <span class="acc-number-text">1320789502269</span>
+              <svg class="acc-copy-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+              <span class="acc-copied-badge">COPIED ✔</span>
+            </button>
+          </div>
+          <div>
+            <div style="font-size:16px;margin-bottom:4px;font-weight:300;">박명혜</div>
+            <div style="font-size:9px;color:var(--gold);margin-bottom:4px;letter-spacing:2px;">하나은행</div>
+            <button class="acc-number-row" onclick="copyNumber(this, '30291006159807')" aria-label="계좌번호 복사">
+              <span class="acc-number-text">30291006159807</span>
+              <svg class="acc-copy-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+              <span class="acc-copied-badge">COPIED ✔</span>
+            </button>
+          </div>
         </div>
       </div>
     </div>
@@ -306,10 +317,10 @@ body{overflow-x:hidden;}
       </button>
       <div class="acc-body" id="body-bride">
         <div class="acc-inner">
-          <div style="font-size:18px;margin-bottom:4px;font-weight:300;">양소정</div>
-          <div style="font-size:9px;color:var(--gold);margin-bottom:4px;letter-spacing:2px;">신한은행</div>
-          <button class="acc-number-row" onclick="copyNumber(this, '000-0000-0000-00')" aria-label="계좌번호 복사">
-            <span class="acc-number-text">000-0000-0000-00</span>
+          <div style="font-size:16px;margin-bottom:4px;font-weight:300;">양소정</div>
+          <div style="font-size:9px;color:var(--gold);margin-bottom:4px;letter-spacing:2px;">카카오뱅크</div>
+          <button class="acc-number-row" onclick="copyNumber(this, '3333165847928')" aria-label="계좌번호 복사">
+            <span class="acc-number-text">3333165847928</span>
             <svg class="acc-copy-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
             <span class="acc-copied-badge">COPIED ✔</span>
           </button>
