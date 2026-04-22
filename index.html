@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <meta property="og:title" content="윤창훈 ♥ 양소정 결혼합니다">
-<meta property="og:description" content="2026년 5월 12일 화요일 | 소박하지만 깊은 약속을 맺습니다.">
+<meta property="og:description" content="2026년 5월 1일 금요일 | 소박하지만 깊은 약속을 맺습니다.">
 <meta property="og:image" content="https://orca9152.github.io/wedding/KakaoTalk_20260422_154143233.jpg">
 <meta property="og:url" content="https://orca9152.github.io/wedding/">
 
@@ -175,7 +175,7 @@ body{overflow-x:hidden;}
   <div class="hero" id="hero">
     <div id="hero-img" style="position:absolute;inset:0;background:url('KakaoTalk_20260422_154143233.jpg') center/cover no-repeat;transition:background 0.5s;"></div>
     <div class="hero-overlay"></div>
-    <div class="hero-date">2026. 5. 12.</div>
+    <div class="hero-date">2026. 5. 1.</div>
   </div>
 
   <div class="sec-white fade-in">
@@ -214,7 +214,7 @@ body{overflow-x:hidden;}
   <div class="sec-white fade-in">
     <div class="info-row">
       <div class="info-k">DATE</div>
-      <div class="info-v">2026년 5월 12일 화요일</div>
+      <div class="info-v">2026년 5월 1일 금요일</div>
     </div>
     <div class="info-row">
       <div class="info-k">STYLE</div>
@@ -269,7 +269,7 @@ body{overflow-x:hidden;}
       <p>저희의 소박하지만 깊은 약속을 따뜻한 눈으로 지켜봐 주시고 축복해 주세요. 보내주신 사랑 잊지 않고, 성실하고 행복하게 잘 살겠습니다. 조만간 기회가 닿는 대로 개인적으로 연락 드리고 인사드리겠습니다.</p>
     </div>
     <div class="letter-sign">
-      <div style="font-size:9px;color:var(--gold);margin-bottom:6px;letter-spacing:2px;">2026 · 05 · 12</div>
+      <div style="font-size:9px;color:var(--gold);margin-bottom:6px;letter-spacing:2px;">2026 · 05 · 01</div>
       <div style="font-size:13px;letter-spacing:1px;">신랑 윤창훈 &amp; 신부 양소정 올림</div>
     </div>
   </div>
@@ -417,13 +417,13 @@ function shareKakao() {
   if (window.Kakao && window.Kakao.isInitialized && window.Kakao.isInitialized()) {
     window.Kakao.Share.sendDefault({
       objectType: 'text',
-      text: '윤창훈 ♥ 양소정 결혼합니다\n2026년 5월 12일 화요일',
+      text: '윤창훈 ♥ 양소정 결혼합니다\n2026년 5월 1일 금요일',
       link: { mobileWebUrl: window.location.href, webUrl: window.location.href }
     });
   } else {
     // Web Share API 폴백
     if (navigator.share) {
-      navigator.share({ title: '윤창훈 ♥ 양소정 결혼합니다', text: '2026년 5월 12일 화요일', url: window.location.href });
+      navigator.share({ title: '윤창훈 ♥ 양소정 결혼합니다', text: '2026년 5월 1일 금요일', url: window.location.href });
     } else {
       copyLink();
       showToast('카카오 SDK 미설정 — 링크를 복사했습니다');
@@ -436,7 +436,7 @@ function shareNative() {
   if (navigator.share) {
     navigator.share({
       title: '윤창훈 ♥ 양소정 결혼합니다',
-      text: '2026년 5월 12일 화요일\n가족만의 작은 예식 후 식사',
+      text: '2026년 5월 1일 금요일\n가족만의 작은 예식 후 식사',
       url: window.location.href
     }).catch(() => {});
   } else {
