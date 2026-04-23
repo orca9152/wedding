@@ -295,8 +295,26 @@ function shareNative() { if (navigator.share) { navigator.share({ title: '결혼
     track.style.transform = `translateX(${-current * 100}%)`;
     dotsContainer.querySelectorAll('.gallery-dot').forEach((d, i) => d.classList.toggle('active', i === current));
   }
-  let startX = 0, isDragging = false;
-  wrap.addEventListener('touchstart', e => { startX = e.touches[0].clientX; isDragging = true; });
+  
+  let startX = 0, startY = 0, isDragging = false;
+  
+  wrap.addEventListener('touchstart', e => { 
+    startX = e.touches[0].clientX; 
+    startY = e.touches[0].clientY;
+    isDragging = true; 
+  }, { passive: false });
+  
+  wrap.addEventListener('touchmove', e => {
+    if (!isDragging) return;
+    let diffX = Math.abs(e.touches[0].clientX - startX);
+    let diffY = Math.abs(e.touches[0].clientY - startY);
+    
+    // 좌우 스와이프 시 화면이 위아래로 흔들리는 스크롤 방지
+    if (diffX > diffY && e.cancelable) {
+      e.preventDefault();
+    }
+  }, { passive: false });
+  
   wrap.addEventListener('touchend', e => {
     if (!isDragging) return;
     const diff = e.changedTouches[0].clientX - startX;
